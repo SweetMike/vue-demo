@@ -1,7 +1,9 @@
 <template lang="pug">
   <div id="wrap">
     <TheHeader/>
-    //- <the-header></the-header>
+    <div id="main-container" class="container main-container">
+      <router-view/>
+    </div>
     <TheFooter/>
   </div>
 </template>

@@ -7,9 +7,10 @@ Vue.use(Router)
 export default new Router({
   routes: [
     {
-      path: '/',
-      name: 'HelloWorld',
-      component: HelloWorld
+      path: '/auth/register',
+      name: 'Register',
+      component: () => import('@/views/auth/Register')
     }
-  ]
+  ],
+  mode: 'history'
 })
